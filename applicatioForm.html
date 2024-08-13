@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Application Form</title>
+    <style>
+      div.mycontainer {
+        width: 100%;
+        overflow: auto;
+      }
+      div.mycontainer div {
+        width: 50%;
+        float: left;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: rgb(47, 67, 92);
+      text-align: center;
+      color: #ffffff;
+      padding: 50px;
+    "
+  >
+    <form action="/action_page.php">
+      <label for=""> <h1>Application Form</h1> </label><br /><br />
+
+      <div class="mycontainer">
+        <div>
+          <p>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" />
+          </p>
+
+          <p>
+            <label for="dob">Date of Birth: </label>
+
+            <input type="date" id="dob" />
+          </p>
+
+          <p>
+            <label for="gender">Gender: </label>
+            <select name="gender" id="gender">
+              <option value="no option"></option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </p>
+        </div>
+
+        <div>
+          <p>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" />
+          </p>
+
+          <p><label for="age">age: </label> <input type="number" id="age" /></p>
+
+          <p>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" placeholder="Email id" />
+          </p>
+        </div>
+      </div>
+
+      <label for="pa">Positions Available: </label>
+
+      <input type="radio" id="pa" />
+      <label for="pa">Junior Developer</label>
+
+      <input type="radio" id="pa" />
+      <label for="pa">Mid-Level Developer</label>
+
+      <input type="radio" id="pa" />
+      <label for="pa">Senior Developer</label><br /><br />
+
+      <label for="pl">Programming Languages: </label>
+
+      <input type="checkbox" id="pl" />
+      <label for="pl">Java</label>
+
+      <input type="checkbox" id="pl" />
+      <label for="pl">Python</label>
+
+      <input type="checkbox" id="pl" />
+      <label for="pl">JavaScript</label><br /><br />
+
+      <div class="mycontainer">
+        <div>
+          <label for="pwd">Password: </label>
+          <input type="text" id="pwd" />
+        </div>
+        <div>
+          <label for="cpwd">Confirm Password: </label>
+          <input type="text" id="cpwd" />
+        </div>
+      </div>
+<br><br>
+      <div>
+        <input
+        type="submit"
+        id="Submit"
+        size="50"
+        style="background-color: rgb(247, 112, 112)"
+      />
+      <input
+        type="reset"
+        id="Reset"
+        size="50"
+        style="background-color: rgb(236, 106, 106)"
+      />
+      </div>
+    </form>
+  </body>
+</html>
